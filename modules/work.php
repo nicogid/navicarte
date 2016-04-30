@@ -11,7 +11,7 @@
 		<div class="row">
 			<?php
 			$photos = json_decode($redis->hGet('campagne'.$campagne_id, 'images'));
-			foreach ($array as $i => $value)
+			foreach ($photos as $i => $value)
 			{
 				echo "<div class=\"4u 12u$(mobile)\">";
 				echo "	<a href=\"#\" class=\"image fit\"><img src=\"".$value."\" alt=\"\"></a>";
