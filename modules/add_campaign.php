@@ -52,6 +52,9 @@ if (isset($_POST['new']))
 			function noclick() {
 				document.getElementById("yolo").style.display = "none";
 			}
+			function noclick() {
+				document.getElementById("yolo").style.display = "block";
+			}
 		</script>
 	</head>
 	<body>
@@ -79,7 +82,7 @@ if (isset($_POST['new']))
 						<label><input type="radio" name="radio" onclick="if(this.checked){noclick()}"/> Mise en place de publicité</label>
 						<label><input type="radio" name="radio" /> Contenu libre</label>
 					</li>
-					<li id="yolo">
+					<li id="yolo" style="display:none">
 						<label><input type="checkbox" /> Si oui, souhaiez-vous utilisé notre régie publicitaire</label>
 					</li>
 					<li>
