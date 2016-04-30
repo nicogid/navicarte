@@ -11,6 +11,7 @@
 		<div class="row">
 			<?php
 			$photos = $redis->hGet('campagne'.$campagne_id, 'images');
+			var_dump($photos);
 			foreach ($photos as $i => $value)
 			{
 				echo "<div class=\"4u 12u$(mobile)\">";
