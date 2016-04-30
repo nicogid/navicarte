@@ -24,9 +24,11 @@ if (isset($_POST['new']))
 		'video' => $_POST['video'],
 		'images' => $photo_json
 	);
-	$redis->delete($user.$campaing_id);
-	$redis->hMSet($user.$campaing_id, $data_array);
-	$redis->hIncrBy($user.$campaing_id, 'salary', 100); // Joe earns 100 more now.
+	$campagne_id = $redis.get('last_id_campagne') + 1;
+	$redis->incr('last_id_campagne');
+	$redis->delete($user.$campagne_id);
+	$redis->hMSet($user.$campagne_id, $data_array);
+	$redis->hIncrBy($user.$campagne_id, 'salary', 100); // Joe earns 100 more now.
 }
 ?>
 <!DOCTYPE html>
