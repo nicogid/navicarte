@@ -41,25 +41,23 @@ if (isset($_POST['new']))
 <article id="contact" class="panel">
 	<header>
 		<h2>Contact Me</h2>
-	</header>
-	<form action="#" method="post">
+	</header><form method="post" enctype="multipart/form-data">
 		<div>
-			<div class="row">
-				<div class="6u 12u$(mobile)">
-					<input type="text" name="name" placeholder="Name" />
-				</div>
-				<div class="6u$ 12u$(mobile)">
-					<input type="text" name="email" placeholder="Email" />
-				</div>
-				<div class="12u$">
-					<input type="text" name="subject" placeholder="Subject" />
-				</div>
-				<div class="12u$">
-					<textarea name="message" placeholder="Message" rows="8"></textarea>
-				</div>
-				<div class="12u$">
-					<input type="submit" value="Send Message" />
-				</div>
+			<div class="6u$ 12u$(mobile)">
+				<input type="text" name="name" placeholder="Nom campagne">
+			</div>
+			<div class="6u$ 12u$(mobile)">
+				<textarea name="texte1" placeholder="Texte 1"></textarea>
+			</div>
+			<div class="12u$">
+				<textarea name="video" placeholder="youtube url separe par des virgules"></textarea>
+			</div>
+			<input type="hidden" name="new" value="1"/>
+			<div class="6u$ 12u$(mobile)">
+				<input type="file" name="fichiers[]" multiple>
+			</div>
+			<div class="6u$ 12u$(mobile)">
+				<input type="submit" value="Envoyer">
 			</div>
 		</div>
 	</form>
@@ -75,7 +73,7 @@ if (isset($_POST['new']))
 	<div class="12u$">
 		<textarea name="video" placeholder="youtube url separe par des virgules"></textarea>
 	</div>
-		<input type="hidden" name="new" value="1"/>
+	<input type="hidden" name="new" value="1"/>
 	<div class="6u$ 12u$(mobile)">
 		<input type="file" name="fichiers[]" multiple>
 	</div>
