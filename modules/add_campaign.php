@@ -75,9 +75,7 @@ if (isset($_POST['new']))
 	<div class="12u$">
 		<textarea name="video" placeholder="youtube url separe par des virgules"></textarea>
 	</div>
-	<div class="6u$ 12u$(mobile)">
 		<input type="hidden" name="new" value="1"/>
-	</div>
 	<div class="6u$ 12u$(mobile)">
 		<input type="file" name="fichiers[]" multiple>
 	</div>
