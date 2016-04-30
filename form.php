@@ -2,8 +2,6 @@
 include_once('config.php');
 if (isset($_POST['new']))
 {
-	$redis = new Redis();
-	$redis->connect('127.0.0.1'); // port 6379 by default
 	if (!$redis->get('last_id_campagne'))
 	{
 		$redis->set('last_id_campagne', 0);
