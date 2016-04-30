@@ -1,4 +1,4 @@
 <?php
-$output = shell_exec('tail /var/log/apache2/error.log');
+$output = shell_exec('/var/www/html/tail.sh');
 echo "<pre>$output</pre>";
 ?>
