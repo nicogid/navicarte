@@ -16,7 +16,7 @@
 			{
 				echo "<div class=\"4u 12u$(mobile)\">";
 				echo "	<a href=\"#\" class=\"image fit\"><img src=\"".$key['image']."\" alt=\"\"></a>";
-				echo "</div>";
+				echo "</div>\n";
 			}
 			?>
 		</div>
