@@ -21,7 +21,7 @@ if (isset($_POST['new']))
 			$filename = hash_file('sha1', $file);
 			$path = "images/campagne/".$user.".".$filename.".jpg";
 			move_uploaded_file($file, $path);
-			$photo_json[$i] = $path;
+			$photo_json[$i]['image'] = $path;
 		}
 	}
 	$data_array = array(
