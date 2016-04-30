@@ -1,4 +1,5 @@
 <?php
+session_start ();
 include_once('../config.php');
 if (isset($_GET['new'])){
 	if (isset($_FILES['fichiers']))
@@ -28,7 +29,8 @@ if (isset($_GET['new'])){
     $fp = fopen('images.jpeg', 'w+'); 
     fwrite($fp, $data); 
     fclose($fp);
-	$redis->set('picture', $data);
+	$_SESSION['picture'] = $data;
+	$_SESSION['price'] = $_POST['pwd'];
 }
 ?>
 <!doctype html>

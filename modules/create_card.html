@@ -605,7 +605,7 @@
 				
                     <div class="demo-alert">Veuillez-entre le nombre de carte souhaitez(2€/unité).</div>
 					<input type="number" name="input" ng-model="value" min="1" required>
-                    <md-button ng-click="saveImage($event)" class="md-raised md-primary">Save ({{value*2}})</md-button>
+                    <md-button ng-click="saveImage($event,value)" class="md-raised md-primary">Save ({{value*2}})</md-button>
 
                     <div class="demo-alert" ng-if="isDemo">Image saving is disabled on demo site.</div>
                 </md-dialog>
