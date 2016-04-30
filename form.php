@@ -12,8 +12,9 @@ if (isset($_POST['new']))
 
 		for ($i = 0; $i < $fileCount; $i++)
 		{
+			$ext = pathinfo($fichiers["tmp_name"][$i], PATHINFO_EXTENSION);
 			$filename = hash_file('sha1', $fichiers["tmp_name"][$i]);
-			$path = "images/campagne/".$user.".".$filename.".".pathinfo($fichiers["tmp_name"][$i], PATHINFO_EXTENSION);
+			$path = "images/campagne/".$user.".".$filename.".".$ext;
 			move_uploaded_file($fichiers["tmp_name"][$i], "$path");
 			$photo_json[$i] = $path;
 		}
