@@ -20,12 +20,14 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 <body>
 
 		<!-- Main -->
-
+		<header>
 		<section id="banner">
-			
+			<img src="/assets/images/cartes.png"/>
+			<h3>text</h3>
+			<h3>text</h3>
 		</section>
 
-		<header style="height:500px;background-color: yellow;">
+
 			<a href="#banner" class="button style2 scrolly-middle">Créer ma carte</a>
 		</header>
 
