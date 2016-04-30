@@ -28,7 +28,7 @@
 					</select>
 				</div>
 				<div class="12u$">
-					<input type="submit" value="Send Message" />
+					<input type="submit" value="Ajouter carte" />
 				</div>
 			</div>
 		</div>
