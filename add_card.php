@@ -1,6 +1,7 @@
 <?php
 include_once('config.php');
-if (isset($_GET[''])) {
+if (isset($_GET['']))
+{
 	# code...
 }
 
@@ -24,7 +25,7 @@ if (isset($_GET[''])) {
 			{
 				echo "<option value=\"".$value."\">".$redis->hGet('campagne:'.$value, 'name')."</option>";
 			}
-			 ?>
+			?>
 		</select><br />
 		<input type="submit" value="Ajouter">
 	</form>
