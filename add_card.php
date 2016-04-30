@@ -1,8 +1,8 @@
 <?php
 include_once('config.php');
-if (isset($_GET['']))
+if (isset($_GET['id']) && isset($_GET['id2']) && isset($_GET['collection']) && $_GET['id'] != "null")
 {
-	
+
 }
 
 ?>
