@@ -20,7 +20,7 @@ if (isset($_GET['id_carte']) && isset($_GET['collection']) && $_GET['collection'
 	}
 	?>
 	<form>
-		Numero	 : <input type="number" name="id_carte"/><br />
+		<input type="number" name="id_carte"/><br />
 		<select name="collection">
 			<option value="null">Selectionner une campagne</option>
 			<?php
