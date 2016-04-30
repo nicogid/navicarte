@@ -23,13 +23,13 @@ if (isset($_POST['new']))
 </head>
 <body>
 	<form method="post" enctype="multipart/form-data">
-		<input type="text" name="name" placeholder="Nom campagne">
-		<input type="textarea" name="texte1" placeholder="Texte 1">
-		<input type="textarea" name="texte2" placeholder="Texte 2">
-		<input type="textarea" name="video" placeholder="youtube url separe par des virgules">
-		<input type="hidden" name="new" value="upload"/>
-		<input type="file" name="fichiers[]" multiple>
-		<input type="submit" value="Upload">
+		<br /><input type="text" name="name" placeholder="Nom campagne">
+		<br /><input type="textarea" name="texte1" placeholder="Texte 1">
+		<br /><input type="textarea" name="texte2" placeholder="Texte 2">
+		<br /><input type="textarea" name="video" placeholder="youtube url separe par des virgules">
+		<br /><input type="hidden" name="new" value="upload"/>
+		<br /><input type="file" name="fichiers[]" multiple>
+		<br /><input type="submit" value="Upload">
 	</form>
 
 </body>
