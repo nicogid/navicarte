@@ -19,17 +19,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 </head>
 <body>
 
-	<!-- Wrapper-->
-	<div id="wrapper">
-
-		<!-- Nav -->
-		<nav id="nav">
-			<a href="#me" class="icon fa-home active"><span>Home</span></a>
-			<a href="#work" class="icon fa-folder"><span>Work</span></a>
-			<a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
-			<a href="#" class="icon fa-twitter"><span>Twitter</span></a>
-		</nav>
-
 		<!-- Main -->
 		<header style="height:500px;bg-color:red">
 			<a href="#banner" class="button style2 scrolly-middle">Créer ma carte</a>
