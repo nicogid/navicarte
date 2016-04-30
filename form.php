@@ -4,6 +4,10 @@ if (isset($_POST['new']))
 {
 	$redis = new Redis();
 	$redis->connect('127.0.0.1'); // port 6379 by default
+	if (!$redis->get('last_id_campagne'))
+	{
+		$redis->set('last_id_campagne', 0);
+	}
 	if (isset($_FILES['fichiers']))
 	{
 
@@ -30,7 +34,6 @@ if (isset($_POST['new']))
 	$redis->incr('last_id_campagne');
 	$redis->delete($user.$campagne_id);
 	$redis->hMSet($user.":".$campagne_id, $data_array);
-	$redis->hIncrBy($user.$campagne_id, 'salary', 100); // Joe earns 100 more now.
 }
 ?>
 <!DOCTYPE html>
