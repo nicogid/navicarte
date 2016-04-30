@@ -20,7 +20,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 <body>
 
 		<!-- Main -->
-		<header style="height:500px;bg-color:red">
+		<header style="height:500px;background-color: yellow;">
 			<a href="#banner" class="button style2 scrolly-middle">Créer ma carte</a>
 		</header>
 
