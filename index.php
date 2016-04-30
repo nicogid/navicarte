@@ -14,7 +14,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="assets/bootstrap/css/boostraps.css" />
+	<!-- <link rel="stylesheet" href=assets/bootstrap/css/bootstrap.css /> -->
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 </head>
