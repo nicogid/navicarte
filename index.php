@@ -33,7 +33,9 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 		<!-- Main -->
 		<div id="main">
 			<?php
-			include("modules/work.php");
+			include("modules/add_campaign.php.php");
+			include("modules/add_card.php");
+			include("modules/work.php.php");
 			?>
 		</div>
 
