@@ -24,9 +24,9 @@ if (isset($_POST['new']))
 <body>
 	<form method="post" enctype="multipart/form-data">
 		<br /><input type="text" name="name" placeholder="Nom campagne">
-		<br /><textarea name="texte1" placeholder="Texte 1">
-		<br /><textarea name="texte2" placeholder="Texte 2">
-		<br /><textarea name="video" placeholder="youtube url separe par des virgules">
+		<br /><textarea name="texte1" placeholder="Texte 1"></textarea>
+		<br /><textarea name="texte2" placeholder="Texte 2"></textarea>
+		<br /><textarea name="video" placeholder="youtube url separe par des virgules"></textarea>
 		<br /><input type="hidden" name="new" value="upload"/>
 		<br /><input type="file" name="fichiers[]" multiple>
 		<br /><input type="submit" value="Upload">
