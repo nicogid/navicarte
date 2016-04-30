@@ -7,7 +7,7 @@
 			<div>
 				<div class="row">
 					<div class="6u 12u$(mobile)">
-						<input type="text" name="name" placeholder="Name" />
+					<input type="number" placeholder="Numero" name="id_carte"/>
 					</div>
 					<div class="6u$ 12u$(mobile)">
 						<input type="text" name="email" placeholder="Email" />
@@ -34,7 +34,7 @@ if ($_GET['collection'] == "null")
 }
 ?>
 <form>
-	Numero	 : <input type="number" name="id_carte"/><br />
+
 	<select name="collection">
 		<option value="null">Selectionner une campagne</option>
 		<?php
