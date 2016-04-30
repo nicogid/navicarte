@@ -15,8 +15,8 @@
 			foreach ($photos as $key => $image)
 			{
 				echo "<div class=\"4u 12u$(mobile)\">
-					<a href=\"#\" class=\"image fit\"><img src=\"".$image."\" alt=\"\"></a>
-				</div>";
+					<a href=\"#\" class=\"image fit\"><img src=\"".$key['image']."\" alt=\"\"></a>
+				</div>"
 			}
 			?>
 		</div>
