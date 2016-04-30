@@ -13,7 +13,12 @@ if (isset($_GET['id']) && isset($_GET['id2']) && isset($_GET['collection']) && $
 	<title>Enrigistrer une carte</title>
 </head>
 
-<body>
+<body><?php
+	if ($_GET['id'] == "null")
+	{
+
+	}
+	?>
 	<form>
 		Du numero : <input type="number" name="id"/><br />
 		Au numero : <input type="number" name="id2"/><br />
