@@ -1,6 +1,7 @@
 <?php
 if (isset($_POST['new']))
 {
+	$user = "usertest";
 	if (isset($_FILES['fichiers']))
 	{
 
