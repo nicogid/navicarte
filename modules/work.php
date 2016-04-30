@@ -13,10 +13,10 @@
 			$photos = $redis->hGet('campagne:'.$campagne_id, 'images');
 			$photos = json_decode($photos);
 			var_dump($photos);
-			foreach ($photos as $image)
+			foreach ($photos as $key => $image)
 			{
 				echo "<div class=\"4u 12u$(mobile)\">";
-				echo "	<a href=\"#\" class=\"image fit\"><img src=\"".$image['image']."\" alt=\"\"></a>";
+				echo "	<a href=\"#\" class=\"image fit\"><img src=\"".$image."\" alt=\"\"></a>";
 				echo "</div>";
 			}
 			?>
