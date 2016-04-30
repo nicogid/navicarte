@@ -14,9 +14,9 @@
 			$photos = json_decode($photos);
 			foreach ($photos as $key => $image)
 			{
-				echo "<div class=\"4u 12u$(mobile)\">";
-				echo "	<a href=\"#\" class=\"image fit\"><img src=\"".$key['image']."\" alt=\"\"></a>";
-				echo "</div>\n";
+				echo "<div class=\"4u 12u$(mobile)\">
+					<a href=\"#\" class=\"image fit\"><img src=\"".$key['image']."\" alt=\"\"></a>
+				</div>";
 			}
 			?>
 		</div>
