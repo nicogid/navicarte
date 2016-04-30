@@ -30,7 +30,7 @@ if (isset($_GET['new'])){
     fwrite($fp, $data); 
     fclose($fp);
 	$_SESSION['picture'] = $data;
-	$_SESSION['price'] = $_POST['pwd'];
+	$_SESSION['price'] = $_POST['somme'];
 }
 ?>
 <!doctype html>
