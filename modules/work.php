@@ -12,7 +12,6 @@
 			<?php
 			$photos = $redis->hGet('campagne:'.$campagne_id, 'images');
 			$photos = json_decode($photos);
-			var_dump($photos);
 			foreach ($photos as $value)
 			{
 				var_dump($value);
