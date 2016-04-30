@@ -1,6 +1,6 @@
 <?php
 include_once('config.php');
-if (isset($_GET['id']) && isset($_GET['collection']) && $_GET['id'] != "null")
+if (isset($_GET['id']) && isset($_GET['collection']) && $_GET['collection'] != "null")
 {
 
 }
