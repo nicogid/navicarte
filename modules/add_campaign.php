@@ -72,7 +72,7 @@ if (isset($_POST['new']))
 	<div class="6u$ 12u$(mobile)">
 		<textarea name="texte1" placeholder="Texte 1"></textarea>
 	</div>
-	<div class="6u$ 12u$(mobile)">
+	<div class="12u$">
 		<textarea name="video" placeholder="youtube url separe par des virgules"></textarea>
 	</div>
 	<div class="6u$ 12u$(mobile)">
