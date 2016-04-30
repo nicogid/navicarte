@@ -2,6 +2,8 @@
 include_once('config.php');
 if (isset($_POST['new']))
 {
+	$redis = new Redis();
+	$redis->connect('127.0.0.1'); // port 6379 by default
 	if (isset($_FILES['fichiers']))
 	{
 
