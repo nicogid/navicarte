@@ -1,6 +1,6 @@
 <?php
 session_start ();
-echo $_SESSION['picture'];
+// echo $_SESSION['picture'];
 echo $_SESSION['price'];
 include_once('../config.php');
 if (isset($_POST['new']))
