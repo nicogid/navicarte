@@ -1,6 +1,6 @@
 <?php
 include_once('config.php');
-if (isset($_GET['id']) && isset($_GET['id2']) && isset($_GET['collection']) && $_GET['id'] != "null")
+if (isset($_GET['id']) && isset($_GET['collection']) && $_GET['id'] != "null")
 {
 
 }
@@ -20,8 +20,7 @@ if (isset($_GET['id']) && isset($_GET['id2']) && isset($_GET['collection']) && $
 	}
 	?>
 	<form>
-		Du numero : <input type="number" name="id"/><br />
-		Au numero : <input type="number" name="id2"/><br />
+		Numero : <input type="number" name="id"/><br />
 		<select name="collection">
 			<option value="null">Selectionner une campagne</option>
 			<?php
