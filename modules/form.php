@@ -24,9 +24,10 @@ if (isset($_GET['new'])){
     $parts = explode(',', $dataURL); 
     $data = $parts[1]; 
     $data = base64_decode($data); 
-    $fp = fopen('images/cartes/usertest/'.md5(uniqid(rand(), true)).'jpeg', 'w+'); 
+    $fp = fopen('images.jpeg', 'w+'); 
     fwrite($fp, $data); 
     fclose($fp);
+	$redis->set('picture', $data);
 }
 ?>
 <!doctype html>
