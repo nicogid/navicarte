@@ -10,7 +10,7 @@
 	<section>
 		<div class="row">
 			<?php
-			$photos = json_decode($redis->hGet('campagne'.$campagne_id, 'images'));
+			$photos = $redis->hGet('campagne'.$campagne_id, 'images');
 			foreach ($photos as $i => $value)
 			{
 				echo "<div class=\"4u 12u$(mobile)\">";
