@@ -93,19 +93,26 @@ if (isset($_POST['new']))
 						<label for="message">Message:</label>
 						<textarea cols="50" rows="5" id="message"></textarea>
 					</li>
+					<li>
+						<label for="message">Price:</label>
+						<p><?php echo $_SESSION['price']; ?></p>
+					</li>
+					<li>
+						<img src="<?php echo $_SESSION['picture']; ?>" height="1004" width="650">
+					</li>
 				</ul>
 				
-<input type="hidden" name="cmd" value="_xclick">
-<input type="hidden" name="business" value="msylvestreets@yahoo.fr">
-<input type="hidden" name="lc" value="FR">
-<input type="hidden" name="item_name" value="Test">
-<input type="hidden" name="amount" value="20.00">
-<input type="hidden" name="currency_code" value="EUR">
-<input type="hidden" name="button_subtype" value="services">
-<input type="hidden" name="no_note" value="0">
-<input type="hidden" name="tax_rate" value="2.000">
-<input type="hidden" name="shipping" value="0.00">
-<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+				<input type="hidden" name="cmd" value="_xclick">
+				<input type="hidden" name="business" value="msylvestreets@yahoo.fr">
+				<input type="hidden" name="lc" value="FR">
+				<input type="hidden" name="item_name" value="Test">
+				<input type="hidden" name="amount" value="20.00">
+				<input type="hidden" name="currency_code" value="EUR">
+				<input type="hidden" name="button_subtype" value="services">
+				<input type="hidden" name="no_note" value="0">
+				<input type="hidden" name="tax_rate" value="2.000">
+				<input type="hidden" name="shipping" value="0.00">
+				<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
 
 
 				<p>
