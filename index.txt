@@ -9,7 +9,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 -->
 <html>
 <head>
-	<title>Navicarte</title>
+	<title>Astral by HTML5 UP</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -31,16 +31,12 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 		</nav>
 
 		<!-- Main -->
-		<header style="height:500px;bg-color:red">
-			<a href="#banner" class="button style2 scrolly-middle">Créer ma carte</a>
-		</header>
-
-		<div>
-			<a href="#banner" class="button style2 scrolly-middle">Créer ma carte</a>
-		</div>
-
-		<div>
-			<a href="#banner" class="button style2 scrolly-middle">Créer ma carte</a>
+		<div id="main">
+			<?php
+			include("modules/add_campaign.php.php");
+			include("modules/add_card.php");
+			include("modules/work.php.php");
+			?>
 		</div>
 
 		<!-- Footer -->
