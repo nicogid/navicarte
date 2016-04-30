@@ -12,12 +12,13 @@
 			<?php
 			$photos = $redis->hGet('campagne:'.$campagne_id, 'images');
 			$photos = json_decode($photos);
-			foreach ($photos as $value => $image)
+			$i = 0;
+			while ($photos[$i]['image'])
 			{
-				var_dump($value);
 				echo "<div class=\"4u 12u$(mobile)\">";
-				echo "	<a href=\"#\" class=\"image fit\"><img src=\"".$image."\" alt=\"\"></a>";
+				echo "	<a href=\"#\" class=\"image fit\"><img src=\"".$photos[$i]['image']."\" alt=\"\"></a>";
 				echo "</div>";
+				$i++;
 			}
 			?>
 		</div>
