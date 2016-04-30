@@ -12,12 +12,12 @@
 			<?php
 			$photos = $redis->hGet('campagne'.$campagne_id, 'images');
 			var_dump($photos);
-			foreach ($photos as $i => $value)
-			{
-				echo "<div class=\"4u 12u$(mobile)\">";
-				echo "	<a href=\"#\" class=\"image fit\"><img src=\"".$value."\" alt=\"\"></a>";
-				echo "</div>";
-			}
+			// foreach ($photos as $i => $value)
+			// {
+			// 	echo "<div class=\"4u 12u$(mobile)\">";
+			// 	echo "	<a href=\"#\" class=\"image fit\"><img src=\"".$value."\" alt=\"\"></a>";
+			// 	echo "</div>";
+			// }
 			?>
 		</div>
 	</section>
