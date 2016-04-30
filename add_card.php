@@ -14,13 +14,13 @@ if (isset($_GET['id']) && isset($_GET['collection']) && $_GET['id'] != "null")
 </head>
 
 <body><?php
-	if ($_GET['id'] == "null")
+	if ($_GET['collection'] == "null")
 	{
 		echo "<h4>Merci de renseigner une campagne</h4>";
 	}
 	?>
 	<form>
-		Numero : <input type="number" name="id"/><br />
+		Numero	 : <input type="number" name="id"/><br />
 		<select name="collection">
 			<option value="null">Selectionner une campagne</option>
 			<?php
