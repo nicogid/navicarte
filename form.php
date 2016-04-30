@@ -28,6 +28,7 @@ if (isset($_POST['new']))
 		'texte1' => $_POST['texte1'],
 		'name' => $_POST['name'],
 		'texte1' => $_POST['texte1'],
+		'user' => $user,
 		'video' => $_POST['video'],
 		'images' => json_encode($photo_json)
 	);
@@ -35,6 +36,8 @@ if (isset($_POST['new']))
 	$redis->incr('last_id_campagne');
 	$redis->delete("campagne:".$campagne_id);
 	$redis->hMSet("campagne:".$campagne_id, $data_array);
+	$redis->sAdd('user:'.$user.'campagne_list', $campagne_id);
+
 }
 ?>
 <!DOCTYPE html>
