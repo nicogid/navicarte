@@ -52,7 +52,7 @@ if (isset($_POST['new']))
 			function noclick() {
 				document.getElementById("yolo").style.display = "none";
 			}
-			function noclick() {
+			function click() {
 				document.getElementById("yolo").style.display = "block";
 			}
 		</script>
@@ -79,8 +79,8 @@ if (isset($_POST['new']))
 						<input type="email";l size="40" id="text" />
 					</li>
 					<li>
-						<label><input type="radio" name="radio" onclick="if(this.checked){noclick()}"/> Mise en place de publicité</label>
-						<label><input type="radio" name="radio" /> Contenu libre</label>
+						<label><input type="radio" name="radio" onclick="if(this.checked){click()}"/> Mise en place de publicité</label>
+						<label><input type="radio" name="radio" onclick="if(this.checked){noclick()}"/> Contenu libre</label>
 					</li>
 					<li id="yolo" style="display:none">
 						<label><input type="checkbox" /> Si oui, souhaiez-vous utilisé notre régie publicitaire</label>
