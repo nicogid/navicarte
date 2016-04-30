@@ -16,17 +16,17 @@ if (isset($_POST['new']))
 			$path = "/images/campagne/".$user.".".$filename.".".pathinfo($fichiers["tmp_name"][$i], PATHINFO_EXTENSION);
 			$photo_json[$i] = $path;
 		}
-		$data_array = array(
-			'texte1' => $_POST['texte1'],
-			'name' => $_POST['name'],
-			'texte1' => $_POST['texte1'],
-			'video' => $_POST['video'],
-			'images' => $photo_json
-		);
-		$redis->delete($user.$campaing_id);
-		$redis->hMSet($user.$campaing_id, $data_array);
-		$redis->hIncrBy($user.$campaing_id, 'salary', 100); // Joe earns 100 more now.
 	}
+	$data_array = array(
+		'texte1' => $_POST['texte1'],
+		'name' => $_POST['name'],
+		'texte1' => $_POST['texte1'],
+		'video' => $_POST['video'],
+		'images' => $photo_json
+	);
+	$redis->delete($user.$campaing_id);
+	$redis->hMSet($user.$campaing_id, $data_array);
+	$redis->hIncrBy($user.$campaing_id, 'salary', 100); // Joe earns 100 more now.
 }
 ?>
 <!DOCTYPE html>
