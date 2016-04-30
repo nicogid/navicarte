@@ -1,6 +1,5 @@
 <?php
-if (isset($_GET['new']))
-{
+if (isset($_GET['new'])){
 	if (isset($_FILES['fichiers']))
 	{
 		$myFile = $_FILES['fichiers'];
@@ -20,6 +19,14 @@ if (isset($_GET['new']))
 			<?php
 		}
 	}
+}elseif ( isset($_POST["image"]) && !empty($_POST["image"]) ) {
+    $dataURL = $_POST["image"]; 
+    $parts = explode(',', $dataURL); 
+    $data = $parts[1]; 
+    $data = base64_decode($data); 
+    $fp = fopen('image.png', 'w+'); 
+    fwrite($fp, $data); 
+    fclose($fp);
 }
 ?>
 <!doctype html>
