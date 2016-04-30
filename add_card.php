@@ -1,6 +1,8 @@
 <?php
 include_once('config.php');
-
+if (isset($_GET[''])) {
+	# code...
+}
 
 ?>
 <!DOCTYPE html>
@@ -13,7 +15,7 @@ include_once('config.php');
 <body>
 	<form>
 		Du numero : <input type="number" name="id"/><br />
-		Au numero : <input type="number" name="id"/><br />
+		Au numero : <input type="number" name="id2"/><br />
 		<select name="collection">
 			<option value="null">Selectionner une campagne</option>
 			<?php
