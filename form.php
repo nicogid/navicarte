@@ -32,7 +32,7 @@ if (isset($_POST['new']))
 	);
 	$campagne_id = $redis->get('last_id_campagne') + 1;
 	$redis->incr('last_id_campagne');
-	$redis->delete($user.$campagne_id);
+	$redis->delete($user.":".$campagne_id);
 	$redis->hMSet($user.":".$campagne_id, $data_array);
 }
 ?>
