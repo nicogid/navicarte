@@ -24,7 +24,7 @@ include_once('config.php');
 			}
 			 ?>
 		</select><br />
-		<input type="submit" >ok</input>
+		<input type="submit" value="Ajouter">
 	</form>
 </body>
 </html>
