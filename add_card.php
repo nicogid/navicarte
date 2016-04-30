@@ -24,6 +24,7 @@ include_once('config.php');
 			}
 			 ?>
 		</select><br />
+		<input type="submit" >ok</input>
 	</form>
 </body>
 </html>
