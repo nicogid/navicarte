@@ -16,7 +16,7 @@ if (isset($_GET['id']) && isset($_GET['id2']) && isset($_GET['collection']) && $
 <body><?php
 	if ($_GET['id'] == "null")
 	{
-
+		echo "<h4>Merci de renseigner une campagne</h4>";
 	}
 	?>
 	<form>
