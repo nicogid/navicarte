@@ -22,7 +22,7 @@ if (isset($_POST['new']))
 		'name' => $_POST['name'],
 		'texte1' => $_POST['texte1'],
 		'video' => $_POST['video'],
-		'images' => $photo_json
+		'images' => json_encode($photo_json)
 	);
 	$campagne_id = $redis->get('last_id_campagne') + 1;
 	$redis->incr('last_id_campagne');
