@@ -11,6 +11,7 @@
 		<div class="row">
 			<?php
 			$photos = $redis->hGet('campagne'.$campagne_id, 'images');
+			echo $photos;
 			var_dump($photos);
 			// foreach ($photos as $i => $value)
 			// {
