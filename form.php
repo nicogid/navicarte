@@ -35,7 +35,6 @@ if (isset($_POST['new']))
 	$redis->delete("campagne:".$campagne_id);
 	$redis->hMSet("campagne:".$campagne_id, $data_array);
 	$redis->sAdd('user:'.$user.':campagne_list', $campagne_id);
-
 }
 ?>
 <!DOCTYPE html>
@@ -52,6 +51,5 @@ if (isset($_POST['new']))
 		<br /><input type="file" name="fichiers[]" multiple>
 		<br /><input type="submit" value="Envoyer">
 	</form>
-
 </body>
 </html>
