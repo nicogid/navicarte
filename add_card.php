@@ -12,7 +12,8 @@ include_once('config.php');
 
 <body>
 	<form>
-		<input type="number" name="id"/>
+		Du numero : <input type="number" name="id"/><br />
+		Au numero : <input type="number" name="id"/><br />
 		<select name="collection">
 			<option value="null">Selectionner une campagne</option>
 			<?php
@@ -22,7 +23,7 @@ include_once('config.php');
 				echo "<option value=\"".$value."\">".$redis->hGet('campagne:'.$value, 'name')."</option>";
 			}
 			 ?>
-		</select>
+		</select><br />
 	</form>
 </body>
 </html>
