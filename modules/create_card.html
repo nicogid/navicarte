@@ -542,7 +542,7 @@
                     <md-button ng-click="openUploadDialog($event)">Open</md-button>
                     <md-button ng-class="{ inactive: !historyPanelOpen }" ng-click="toggleRightPanel('history', $event)">History</md-button>
                     <md-button ng-class="{ inactive: !objectsPanelOpen }" ng-click="toggleRightPanel('objects', $event)">Layers</md-button>
-                    <md-button ng-click="saveToComputer('png',10,'usertest')" class="md-primary md-raised">Save</md-button>
+                    <md-button ng-click="openSaveDialog($event)" class="md-primary md-raised">Save</md-button>
                 </section>
 
                 <canvas ng-show="started" id="canvas" class="md-whiteframe-z2"></canvas>
@@ -602,20 +602,8 @@
 
             <script type="application/ng-template" id="save-image-dialog">
                 <md-dialog class="upload-file-dialog save-dialog">
-                    <md-input-container>
-                        <label>File Name</label>
-                        <input type="text" ng-model="imageName">
-                    </md-input-container>
-
-                    <md-radio-group ng-model="imageType">
-                        <md-radio-button value="jpeg">JPEG</md-radio-button>
-                        <md-radio-button value="png">PNG </md-radio-button>
-                    </md-radio-group>
-
-                    <div ng-if="imageType === 'jpeg'">
-                        <div class="slider-label">Quality {{ imageQuality }}</div>
-                        <md-slider aria-label="Angle" md-discrete ng-model="imageQuality" step="1" min="1" max="10" ></md-slider>
-                    </div>
+                    
+                    <div class="demo-alert">Souhaitez-vous validé votre carte ?.</div>
 
                     <md-button ng-click="saveImage($event)" class="md-raised md-primary">Save</md-button>
 
