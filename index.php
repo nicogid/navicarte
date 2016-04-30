@@ -22,10 +22,9 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 		<!-- Main -->
 
 		<section id="banner">
-			<h2>RC LENS</h2>
-			<p>Racing Club de Lens</p>
+			
 		</section>
-		
+
 		<header style="height:500px;background-color: yellow;">
 			<a href="#banner" class="button style2 scrolly-middle">Créer ma carte</a>
 		</header>
