@@ -16,7 +16,7 @@
 			{
 				var_dump($value);
 				echo "<div class=\"4u 12u$(mobile)\">";
-				echo "	<a href=\"#\" class=\"image fit\"><img src=\"".$value."\" alt=\"\"></a>";
+				echo "	<a href=\"#\" class=\"image fit\"><img src=\"".$value['image']."\" alt=\"\"></a>";
 				echo "</div>";
 			}
 			?>
