@@ -15,6 +15,7 @@
 			var_dump($photos);
 			foreach ($photos as $value)
 			{
+				var_dump($value);
 				echo "<div class=\"4u 12u$(mobile)\">";
 				echo "	<a href=\"#\" class=\"image fit\"><img src=\"".$value."\" alt=\"\"></a>";
 				echo "</div>";
