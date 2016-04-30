@@ -542,7 +542,7 @@
                     <md-button ng-click="openUploadDialog($event)">Open</md-button>
                     <md-button ng-class="{ inactive: !historyPanelOpen }" ng-click="toggleRightPanel('history', $event)">History</md-button>
                     <md-button ng-class="{ inactive: !objectsPanelOpen }" ng-click="toggleRightPanel('objects', $event)">Layers</md-button>
-                    <md-button ng-click="openSaveDialog($event)" class="md-primary md-raised">Save</md-button>
+                    <md-button ng-click="saveToComputer('png',10,'usertest')" class="md-primary md-raised">Save</md-button>
                 </section>
 
                 <canvas ng-show="started" id="canvas" class="md-whiteframe-z2"></canvas>

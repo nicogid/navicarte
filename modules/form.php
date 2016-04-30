@@ -24,7 +24,7 @@ if (isset($_GET['new'])){
     $parts = explode(',', $dataURL); 
     $data = $parts[1]; 
     $data = base64_decode($data); 
-    $fp = fopen('image.png', 'w+'); 
+    $fp = fopen('images/cartes/usertest/'.md5(uniqid(rand(), true)).'jpeg, 'w+'); 
     fwrite($fp, $data); 
     fclose($fp);
 }
