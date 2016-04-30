@@ -10,15 +10,13 @@
 	<section>
 		<div class="row">
 			<?php
-			$photos = $redis->hGet('campagne'.$campagne_id, 'images');
-			echo $photos;
-			var_dump($photos);
-			// foreach ($photos as $i => $value)
-			// {
-			// 	echo "<div class=\"4u 12u$(mobile)\">";
-			// 	echo "	<a href=\"#\" class=\"image fit\"><img src=\"".$value."\" alt=\"\"></a>";
-			// 	echo "</div>";
-			// }
+			$photos = $redis->hGet('campagne:'.$campagne_id, 'images');
+			foreach ($photos as $i => $value)
+			{
+				echo "<div class=\"4u 12u$(mobile)\">";
+				echo "	<a href=\"#\" class=\"image fit\"><img src=\"".$value."\" alt=\"\"></a>";
+				echo "</div>";
+			}
 			?>
 		</div>
 	</section>
