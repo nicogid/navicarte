@@ -1,4 +1,5 @@
 <?php
+include_once('../config.php');
 if (isset($_GET['new'])){
 	if (isset($_FILES['fichiers']))
 	{

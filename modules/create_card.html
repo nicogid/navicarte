@@ -602,10 +602,10 @@
 
             <script type="application/ng-template" id="save-image-dialog">
                 <md-dialog class="upload-file-dialog save-dialog">
-                    
-                    <div class="demo-alert">Souhaitez-vous validé votre carte ?.</div>
-
-                    <md-button ng-click="saveImage($event)" class="md-raised md-primary">Save</md-button>
+				
+                    <div class="demo-alert">Veuillez-entre le nombre de carte souhaitez(2€/unité).</div>
+					<input type="number" name="input" ng-model="value" min="1" required>
+                    <md-button ng-click="saveImage($event)" class="md-raised md-primary">Save ({{value*2}})</md-button>
 
                     <div class="demo-alert" ng-if="isDemo">Image saving is disabled on demo site.</div>
                 </md-dialog>

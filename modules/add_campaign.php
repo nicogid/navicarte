@@ -52,7 +52,7 @@ if (isset($_POST['new']))
 	</head>
 	<body>
 		<article>
-			<h1>Sexy form elements</h1>
+			<h1>Contenu de votre campagne</h1>
 			<form method="post">
 				<ul>
 					<li>
@@ -86,30 +86,5 @@ if (isset($_POST['new']))
 			</form>
 		</article>
 		<footer>
-			<p>A little freebie made with <strong>♥</strong> by the nice folks over at <a href="http://www.webdezign.co.uk">Webdezign</a></p>
+			<p>A little freebie made with <strong>♥</strong> by the nice folks over at <a href="http://www.InnovatioPrimus.fr">InnovatioPrimus</a></p>
 		</footer>
-<!-- Contact -->
-<article id="contact" class="panel">
-	<header>
-		<h2>Contact Me</h2>
-	</header><form method="post" enctype="multipart/form-data">
-		<div>
-			<div class="6u$ 12u$(mobile)">
-				<input type="text" name="name" placeholder="Nom campagne">
-			</div>
-			<div class="6u$ 12u$(mobile)">
-				<textarea name="texte1" placeholder="Texte 1"></textarea>
-			</div>
-			<div class="12u$">
-				<textarea name="video" placeholder="youtube url separe par des virgules"></textarea>
-			</div>
-			<input type="hidden" name="new" value="1"/>
-			<div class="6u$ 12u$(mobile)">
-				<input type="file" name="fichiers[]" multiple>
-			</div>
-			<div class="6u$ 12u$(mobile)">
-				<input type="submit" value="Envoyer">
-			</div>
-		</div>
-	</form>
-</article>
