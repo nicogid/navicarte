@@ -1,9 +1,7 @@
 <?php
 $redis = new Redis();
 $redis->connect('127.0.0.1'); // port 6379 by default
-$valeur = $redis->Get('test2:ddsfds');
-echo "Ceci est un test";
-echo $valeur;
+$campagne_id = 1;
 ?>
 <!DOCTYPE HTML>
 <!--
@@ -37,9 +35,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 		<!-- Main -->
 		<div id="main">
 			<?php
-			include("modules/me.php");
 			include("modules/work.php");
-			include("modules/contact.php");
 			?>
 		</div>
 
