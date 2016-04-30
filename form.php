@@ -24,7 +24,7 @@ if (isset($_POST['new']))
 		'video' => $_POST['video'],
 		'images' => $photo_json
 	);
-	$campagne_id = $redis.get('last_id_campagne') + 1;
+	$campagne_id = $redis->get('last_id_campagne') + 1;
 	$redis->incr('last_id_campagne');
 	$redis->delete($user.$campagne_id);
 	$redis->hMSet($user.$campagne_id, $data_array);
