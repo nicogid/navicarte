@@ -52,12 +52,15 @@ if (isset($_POST['new']))
 			function noclick() {
 				document.getElementById("yolo").style.display = "none";
 			}
+			function click() {
+				document.getElementById("yolo").style.display = "block";
+			}
 		</script>
 	</head>
 	<body>
 		<article>
 			<h1>Contenu de votre campagne</h1>
-			<form method="post">
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 				<ul>
 					<li>
 						<label for="name">Nom de la campagne:</label>
@@ -76,10 +79,10 @@ if (isset($_POST['new']))
 						<input type="email";l size="40" id="text" />
 					</li>
 					<li>
-						<label><input type="radio" name="radio" onclick="if(this.checked){noclick()}"/> Mise en place de publicité</label>
-						<label><input type="radio" name="radio" /> Contenu libre</label>
+						<label><input type="radio" name="radio" onclick="if(this.checked){click()}"/> Mise en place de publicité</label>
+						<label><input type="radio" name="radio" onclick="if(this.checked){noclick()}"/> Contenu libre</label>
 					</li>
-					<li id="yolo">
+					<li id="yolo" style="display:none">
 						<label><input type="checkbox" /> Si oui, souhaiez-vous utilisé notre régie publicitaire</label>
 					</li>
 					<li>
@@ -90,9 +93,31 @@ if (isset($_POST['new']))
 						<label for="message">Message:</label>
 						<textarea cols="50" rows="5" id="message"></textarea>
 					</li>
+					<li>
+						<label for="message">Price:</label>
+						<p><?php echo $_SESSION['price']; ?></p>
+					</li>
+					<li>
+						<img src="<?php echo $_SESSION['picture']; ?>" height="1004" width="650">
+					</li>
 				</ul>
+				
+				<input type="hidden" name="cmd" value="_xclick">
+				<input type="hidden" name="business" value="msylvestreets@yahoo.fr">
+				<input type="hidden" name="lc" value="FR">
+				<input type="hidden" name="item_name" value="Test">
+				<input type="hidden" name="amount" value="20.00">
+				<input type="hidden" name="currency_code" value="EUR">
+				<input type="hidden" name="button_subtype" value="services">
+				<input type="hidden" name="no_note" value="0">
+				<input type="hidden" name="tax_rate" value="2.000">
+				<input type="hidden" name="shipping" value="0.00">
+				<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+
+
 				<p>
-					<button type="submit" class="action">Call to action</button>
+				<input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal, le réflexe sécurité pour payer en ligne">
+<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
 					<button type="reset" class="right">Reset</button>
 				</p>
 			</form>
