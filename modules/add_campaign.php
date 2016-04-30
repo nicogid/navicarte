@@ -1,7 +1,5 @@
 <?php
 session_start ();
-// echo $_SESSION['picture'];
-echo $_SESSION['price'];
 include_once('../config.php');
 if (isset($_POST['new']))
 {
@@ -51,6 +49,9 @@ if (isset($_POST['new']))
 			$(function(){
 				$("input:checkbox, input:radio, input:file, select").uniform();
 			});
+			function noclick() {
+				document.getElementById("yolo").style.display = "none";
+			}
 		</script>
 	</head>
 	<body>
@@ -63,14 +64,22 @@ if (isset($_POST['new']))
 						<input type="text" size="40" id="name" placeholder="Nom campagne"/>
 					</li>
 					<li>
-						<label for="email">Lien Youtube:</label>
+						<label for="name">Sous-titre:</label>
+						<input type="text" size="40" id="slogan" placeholder="Slogan"/>
+					</li>
+					<li>
+						<label>Charger votre image de mise en avant:</label>
+						<input type="file" name="fichier">
+					</li>
+					<li>
+						<label for="email">Lien playliste Youtube:</label>
 						<input type="email";l size="40" id="text" />
 					</li>
 					<li>
-						<label><input type="radio" name="radio" /> Mise en place de publicité</label>
+						<label><input type="radio" name="radio" onclick="if(this.checked){noclick()}"/> Mise en place de publicité</label>
 						<label><input type="radio" name="radio" /> Contenu libre</label>
 					</li>
-					<li>
+					<li id="yolo">
 						<label><input type="checkbox" /> Si oui, souhaiez-vous utilisé notre régie publicitaire</label>
 					</li>
 					<li>
