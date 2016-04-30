@@ -36,7 +36,7 @@ if (isset($_POST['new']))
 	$redis->incr('last_id_campagne');
 	$redis->delete("campagne:".$campagne_id);
 	$redis->hMSet("campagne:".$campagne_id, $data_array);
-	$redis->sAdd('user:'.$user.'campagne_list', $campagne_id);
+	$redis->sAdd('user:'.$user.':campagne_list', $campagne_id);
 
 }
 ?>
