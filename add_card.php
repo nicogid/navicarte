@@ -19,7 +19,7 @@ include_once('config.php');
 			$campagne_list = $redis->sMembers('user:'.$user.':campagne_list');
 			foreach ($campagne_list as $value)
 			{
-				echo "<option value=\"volvo\">Volvo</option>";
+				echo "<option value=\"".$value."\">".$redis.hGet('campagne:'.$value, 'name')."</option>";
 			}
 			 ?>
 		</select>
