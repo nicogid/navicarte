@@ -10,13 +10,16 @@
 					<input type="number" placeholder="Numero" name="id_carte"/>
 					</div>
 					<div class="6u$ 12u$(mobile)">
-						<input type="text" name="email" placeholder="Email" />
-					</div>
-					<div class="12u$">
-						<input type="text" name="subject" placeholder="Subject" />
-					</div>
-					<div class="12u$">
-						<textarea name="message" placeholder="Message" rows="8"></textarea>
+						<select name="collection">
+							<option value="null">Selectionner une campagne</option>
+							<?php
+							$campagne_list = $redis->sMembers('user:'.$user.':campagne_list');
+							foreach ($campagne_list as $value)
+							{
+								echo "<option value=\"".$value."\">".$redis->hGet('campagne:'.$value, 'name')."</option>";
+							}
+							?>
+						</select>
 					</div>
 					<div class="12u$">
 						<input type="submit" value="Send Message" />
