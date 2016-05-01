@@ -93,13 +93,6 @@ if (isset($_POST['new']))
 						<label for="message">Message:</label>
 						<textarea cols="50" rows="5" id="message"></textarea>
 					</li>
-					<li>
-						<label for="message">Price:</label>
-						<p><?php echo $_SESSION['price']; ?></p>
-					</li>
-					<li>
-						<img src="<?php echo $_SESSION['picture']; ?>" height="1004" width="650">
-					</li>
 				</ul>
 				
 				<input type="hidden" name="cmd" value="_xclick">
