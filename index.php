@@ -17,12 +17,12 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 <body>
 
 		<!-- Main -->
-		<header id="banner">
+		<select id="banner">
 			<img src="/assets/images/carte.png"/>
 			<h3>text</h3>
 			<h3>text</h3>
 				<a href="#banner" class="button style2 scrolly-middle">Créer ma carte</a>
-		</header>
+		</select>
 
 		<div>
 			<h1>HTML Ipsum Presents</h1>
