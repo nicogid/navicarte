@@ -76,7 +76,7 @@ if (isset($_POST['new']))
 					</li>
 					<li>
 						<label for="email">Lien playliste Youtube:</label>
-						<input type="email";l size="40" id="text" />
+						<input type="text";l size="40" id="text" />
 					</li>
 					<li>
 						<label><input type="radio" name="radio" onclick="if(this.checked){click()}"/> Mise en place de publicité</label>
