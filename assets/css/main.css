@@ -9,7 +9,7 @@
 
 /* Reset */
 
-#banner {
+banner {
     background-attachment: scroll, fixed;
     background-color: #666;
     background-image: url("/assets/images/banner.png");
