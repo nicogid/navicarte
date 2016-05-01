@@ -59,7 +59,7 @@ if (isset($_POST['new']))
 	</head>
 	<body>
 		<?php 
-		if (!isset($_POST['slogan'])){ 
+		if (!isset($_POST['firstname'])){ 
 			echo '<article>
 				<h1>Inscription</h1>
 				<form action="#" method="post" target="_top">
@@ -100,8 +100,6 @@ if (isset($_POST['new']))
 
 
 					<p>
-						<input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal, le réflexe sécurité pour payer en ligne">
-						<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
 						<button type="submit" class="right">Inscription</button>
 					</p>
 				</form>
