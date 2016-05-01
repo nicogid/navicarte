@@ -66,7 +66,7 @@ if (isset($_POST['new']))
 					<ul>
 						<li>
 							<label for="name">Nom :</label>
-							<input type="text" size="40" id="firstname" placeholder="Firstname"/>
+							<input type="text" size="40" id="firstname" name="firstname" placeholder="Firstname"/>
 						</li>
 						<li>
 							<label for="name">Prenom :</label>
