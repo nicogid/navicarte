@@ -1,6 +1,3 @@
-<?php
-include_once('config.php');
-?>
 <!DOCTYPE HTML>
 <!--
 Astral by HTML5 UP
