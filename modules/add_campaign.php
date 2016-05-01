@@ -143,6 +143,9 @@ if (isset($_POST['new']))
 							<label for="message">Message:</label>
 							<textarea cols="50" rows="5" id="message"></textarea>
 						</li>
+						<li>
+							<img src="'.<?php echo $_SESSION['picture']; ?>.'" alt="Smiley face" height="100%" width="100%">
+						</li>
 					</ul>
 					
 					<input type="hidden" name="cmd" value="_xclick">

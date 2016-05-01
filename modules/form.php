@@ -26,10 +26,10 @@ if (isset($_GET['new'])){
     $parts = explode(',', $dataURL); 
     $data = $parts[1]; 
     $data = base64_decode($data); 
-    $fp = fopen('images.jpg', 'w+'); 
+    $fp = fopen('images/carte/'.$data.'.jpg', 'w+'); 
     fwrite($fp, $data); 
     fclose($fp);
-	$_SESSION['picture'] = $data;
+	$_SESSION['picture'] ='images/carte/'.$data.'.jpg';
 	$_SESSION['price'] = $_POST['somme']*2;
 }
 ?>
