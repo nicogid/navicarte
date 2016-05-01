@@ -144,7 +144,7 @@ if (isset($_POST['new']))
 							<textarea cols="50" rows="5" id="message"></textarea>
 						</li>
 						<li>
-							<img src="'.$_SESSION['picture'];.'" alt="Smiley face" height="100%" width="100%">
+							<img src="'.$_SESSION['picture'].'" alt="Smiley face" height="100%" width="100%">
 						</li>
 					</ul>
 					
