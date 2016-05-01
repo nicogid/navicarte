@@ -109,7 +109,7 @@ if (isset($_POST['new']))
 			<footer>
 				<p>A little freebie made with <strong>♥</strong> by the nice folks over at <a href="http://www.InnovatioPrimus.fr">InnovatioPrimus</a></p>
 			</footer>';
-		else{ 
+		}else{ 
 			echo '<article>
 				<h1>Contenu de votre campagne</h1>
 				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
