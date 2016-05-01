@@ -29,7 +29,7 @@ if (isset($_GET['new'])){
     $fp = fopen('images/carte/'.$data.'.jpg', 'w+'); 
     fwrite($fp, $data); 
     fclose($fp);
-	$_SESSION['picture'] ='images/carte/'.$data.'.jpg';
+	$_SESSION['picture'] = $data.'.jpg';
 	$_SESSION['price'] = $_POST['somme']*2;
 }
 ?>
